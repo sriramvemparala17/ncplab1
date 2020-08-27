@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body style="background-color:#;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 10px;
+  height: 150px;
+}
+.middle, .right {
+  width: 25%;
+}
+.left {
+  width: 50%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  text-align: center;
+  background-color: #e6ffff;
+  height: 500px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to the BBC</h2>
+<p>DEC 25 2006<p>
+<div class="row">
+
+  <div class="column left" style="background-color:#white;">
+  <div class="card">
+  <img src="21.jpg" alt="HTML5 Icon" style="width:350px;height:250px;" class="center">
+
+    <h2>England chase 284 against South Africa</h2>
+    <p>expansion....</p></div>
+  </div>
+  <div class="column middle" style="background-color:#white;">
+  <div class="card">
+  <img src="24.png" alt="HTML5 Icon" style="width:250px;height:128px;" class="center">
+    <h2>NASA Adds More Safety Fixes for Boeing's Starliner Crew Capsule</h2>
+    <p>Some text..</p>
+    </div>
+  </div>
+  <div class="column right" style="background-color:#white;">
+  <div class="card">
+  <img src="23.jpg" alt="HTML5 Icon" style="width:250px;height:128px;" class="center">
+
+    <h2>Ancient Mayan palace discovered in Mexico</h2>
+    <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
